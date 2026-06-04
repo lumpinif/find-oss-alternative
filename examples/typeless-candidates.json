@@ -1,0 +1,129 @@
+{
+  "source": "manual-demo-from-public-github-search",
+  "query": "free open source Typeless alternative AI dictation voice input any app",
+  "productReference": {
+    "name": "Typeless",
+    "url": "https://www.typeless.com/",
+    "role": "Commercial product reference for the open-source alternative idea."
+  },
+  "items": [
+    {
+      "fullName": "Open-Less/openless",
+      "url": "https://github.com/Open-Less/openless",
+      "description": "Hold a key, speak, release — AI-polished text appears at your cursor in any app. Open-source voice input for macOS & Windows.",
+      "stars": 2081,
+      "forks": 160,
+      "license": "MIT",
+      "language": "Rust",
+      "topics": [
+        "ai-prompt",
+        "asr",
+        "dictation",
+        "llm",
+        "macos",
+        "open-source",
+        "speech-to-text",
+        "tauri",
+        "typeless-alternative",
+        "voice-input",
+        "windows"
+      ],
+      "pushedAt": "2026-06-01T10:00:49Z"
+    },
+    {
+      "fullName": "TypeWhisper/typewhisper-mac",
+      "url": "https://github.com/TypeWhisper/typewhisper-mac",
+      "description": "Local speech-to-text for macOS on-device AI, fully private, optional cloud",
+      "stars": 1297,
+      "forks": 88,
+      "license": "GPL-3.0",
+      "language": "Swift",
+      "topics": [
+        "apple-silicon",
+        "dictation",
+        "macos",
+        "on-device",
+        "privacy",
+        "speech-to-text",
+        "swiftui",
+        "whisper",
+        "whisperkit"
+      ],
+      "pushedAt": "2026-06-03T09:12:57Z"
+    },
+    {
+      "fullName": "hehehai/voxt",
+      "url": "https://github.com/hehehai/voxt",
+      "description": "Voice input and translation app for macOS. Press to talk, release to paste.",
+      "stars": 636,
+      "forks": 50,
+      "license": null,
+      "language": "Swift",
+      "topics": [
+        "ai",
+        "ai-writer",
+        "asr",
+        "meeting",
+        "speaker",
+        "stt",
+        "typeless",
+        "voice-assistant",
+        "whisper"
+      ],
+      "pushedAt": "2026-06-03T08:52:17Z"
+    },
+    {
+      "fullName": "never13254/GhostType",
+      "url": "https://github.com/never13254/GhostType",
+      "description": "macOS voice productivity app — built-in dictation, AI rewrite, and translation. Powered by local Whisper + LLM.",
+      "stars": 35,
+      "forks": 4,
+      "license": "MIT",
+      "language": "Swift",
+      "topics": [
+        "apple-silicon",
+        "dictation",
+        "macos",
+        "mlx",
+        "open-source",
+        "productivity",
+        "speech-to-text",
+        "voice-to-text",
+        "whisper"
+      ],
+      "pushedAt": "2026-04-15T01:26:31Z"
+    },
+    {
+      "fullName": "DoodzProg/AcouZ",
+      "url": "https://github.com/DoodzProg/AcouZ",
+      "description": "Open-source AI voice dictation for Windows. Hold a key, speak, release — your words appear instantly in any app. Powered by Groq Whisper & Llama-3.",
+      "stars": 14,
+      "forks": 0,
+      "license": "MIT",
+      "language": "Python",
+      "topics": [
+        "dictation",
+        "windows",
+        "whisper",
+        "voice-input"
+      ],
+      "pushedAt": "2026-05-16T13:21:45Z"
+    },
+    {
+      "fullName": "newwying/localtype",
+      "url": "https://github.com/newwying/localtype",
+      "description": "Local, open-source Windows voice dictation — Qwen3-ASR + vLLM, a free alternative to Typeless",
+      "stars": 2,
+      "forks": 0,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "topics": [
+        "dictation",
+        "windows",
+        "qwen3-asr",
+        "vllm"
+      ],
+      "pushedAt": "2026-05-20T04:13:17Z"
+    }
+  ]
+}

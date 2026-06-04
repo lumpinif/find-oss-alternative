@@ -1,0 +1,196 @@
+{
+  "intent": "Build a free, open-source Typeless alternative.",
+  "productReference": {
+    "name": "Typeless",
+    "url": "https://www.typeless.com/",
+    "role": "Commercial product reference for the open-source alternative idea."
+  },
+  "summary": "The precedent set shows this should be a full voice-to-polished-text workflow, not a simple Whisper wrapper.",
+  "queryFamilies": {
+    "product": [
+      "AI dictation",
+      "voice input",
+      "Typeless alternative",
+      "open-source voice typing"
+    ],
+    "workflow": [
+      "hold hotkey",
+      "speak and release",
+      "paste into any app",
+      "cursor insertion"
+    ],
+    "architecture": [
+      "ASR provider",
+      "LLM polish provider",
+      "style presets",
+      "personal dictionary",
+      "local history"
+    ],
+    "implementation": [
+      "global hotkey",
+      "microphone permission",
+      "Whisper",
+      "clipboard fallback",
+      "app-specific prompts"
+    ],
+    "negative": [
+      "awesome list",
+      "toy demo",
+      "tutorial only",
+      "archived"
+    ]
+  },
+  "candidates": [
+    {
+      "name": "Open-Less/openless",
+      "url": "https://github.com/Open-Less/openless",
+      "sourceType": "repo",
+      "decision": "Use",
+      "fit": 100,
+      "stars": 2081,
+      "license": "MIT",
+      "platform": ["macOS", "Windows"],
+      "evidence": "Closest full-product reference: hotkey recording, ASR, LLM polish, style packs, cursor insertion, settings, and local-first positioning.",
+      "takeaways": [
+        "Study the full product loop before designing the MVP.",
+        "Treat polished text as the core value, not raw transcription.",
+        "Use as the first hands-on product reference."
+      ],
+      "risks": [
+        "Do not copy implementation without checking exact files and notices."
+      ]
+    },
+    {
+      "name": "TypeWhisper/typewhisper-mac",
+      "url": "https://github.com/TypeWhisper/typewhisper-mac",
+      "sourceType": "repo",
+      "decision": "Borrow",
+      "fit": 82,
+      "stars": 1297,
+      "license": "GPL-3.0",
+      "platform": ["macOS"],
+      "evidence": "Strong macOS-native reference for local engines, privacy, WhisperKit, and optional cloud support.",
+      "takeaways": [
+        "Borrow local-engine and privacy architecture ideas.",
+        "Study plugin/engine boundaries if building macOS-first."
+      ],
+      "risks": [
+        "GPL-3.0 means direct code reuse needs license compatibility review."
+      ]
+    },
+    {
+      "name": "hehehai/voxt",
+      "url": "https://github.com/hehehai/voxt",
+      "sourceType": "repo",
+      "decision": "Borrow",
+      "fit": 76,
+      "stars": 636,
+      "license": null,
+      "platform": ["macOS"],
+      "evidence": "Useful reference for app-specific and URL-specific prompt rules, translation, and menu-bar voice workflows.",
+      "takeaways": [
+        "Borrow the app-aware prompt routing idea.",
+        "Study how different apps get different enhancement behavior."
+      ],
+      "risks": [
+        "License needs review before direct reuse."
+      ]
+    },
+    {
+      "name": "never13254/GhostType",
+      "url": "https://github.com/never13254/GhostType",
+      "sourceType": "repo",
+      "decision": "Borrow",
+      "fit": 74,
+      "stars": 35,
+      "license": "MIT",
+      "platform": ["macOS"],
+      "evidence": "Low-star but conceptually sharp context-aware Typeless alternative with prompt presets and app detection.",
+      "takeaways": [
+        "Borrow context-aware presets.",
+        "Use as proof that low-star repos can still be high-signal."
+      ],
+      "risks": [
+        "Validate implementation maturity before relying on it."
+      ]
+    },
+    {
+      "name": "DoodzProg/AcouZ",
+      "url": "https://github.com/DoodzProg/AcouZ",
+      "sourceType": "repo",
+      "decision": "Reference",
+      "fit": 68,
+      "stars": 14,
+      "license": "MIT",
+      "platform": ["Windows"],
+      "evidence": "Small Windows-focused reference for hold-key, speak, release, and insert-into-any-app behavior.",
+      "takeaways": [
+        "Use as a Windows MVP reference.",
+        "Study platform-specific hotkey and insertion behavior."
+      ],
+      "risks": [
+        "May not be mature enough as primary architecture reference."
+      ]
+    }
+  ],
+  "decision": {
+    "use": [
+      "Use OpenLess as the closest full-product reference and first hands-on comparison."
+    ],
+    "borrow": [
+      "Borrow TypeWhisper's local/private engine architecture ideas.",
+      "Borrow Voxt and GhostType's app-aware prompt routing and context presets.",
+      "Borrow AcouZ as a minimal Windows workflow reference."
+    ],
+    "avoid": [
+      "Avoid building only a Whisper wrapper.",
+      "Avoid treating transcription as the final product instead of the first step in a writing workflow."
+    ],
+    "buildNew": [
+      "Build new only with a clear differentiated focus, such as coding-agent prompt dictation or a simpler cross-platform open-source workflow."
+    ]
+  },
+  "credits": [
+    {
+      "name": "Open-Less/openless",
+      "url": "https://github.com/Open-Less/openless",
+      "license": "MIT",
+      "credit": "Closest full-product precedent for the Typeless alternative idea.",
+      "reuseGuidance": "Permissive license; preserve notices and verify exact files before direct reuse."
+    },
+    {
+      "name": "TypeWhisper/typewhisper-mac",
+      "url": "https://github.com/TypeWhisper/typewhisper-mac",
+      "license": "GPL-3.0",
+      "credit": "Reference for local-first macOS engine and privacy architecture.",
+      "reuseGuidance": "Treat as architecture inspiration unless GPL compatibility is intended."
+    },
+    {
+      "name": "hehehai/voxt",
+      "url": "https://github.com/hehehai/voxt",
+      "license": null,
+      "credit": "Reference for app-aware prompt routing and voice translation workflow.",
+      "reuseGuidance": "License needs review; borrow ideas only until verified."
+    },
+    {
+      "name": "never13254/GhostType",
+      "url": "https://github.com/never13254/GhostType",
+      "license": "MIT",
+      "credit": "Reference for context-aware Typeless replacement positioning.",
+      "reuseGuidance": "Permissive license; verify exact files before direct reuse."
+    },
+    {
+      "name": "DoodzProg/AcouZ",
+      "url": "https://github.com/DoodzProg/AcouZ",
+      "license": "MIT",
+      "credit": "Reference for a minimal Windows voice dictation path.",
+      "reuseGuidance": "Permissive license; verify exact files before direct reuse."
+    }
+  ],
+  "nextImplementationConstraints": [
+    "Model the product as a pipeline: record audio -> ASR -> text polish -> style/mode routing -> insert at cursor.",
+    "Keep ASR provider, LLM provider, style presets, dictionary, history, and insertion as separate modules.",
+    "Test the real hotkey-to-cursor workflow in target apps, not just isolated transcription.",
+    "Make license and credits visible in README or implementation notes when precedents shape the product."
+  ]
+}

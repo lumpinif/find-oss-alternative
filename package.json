@@ -1,0 +1,22 @@
+{
+  "name": "find-oss-alternative",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Ask your agent to find an OSS alternative first, then build something better.",
+  "license": "MIT",
+  "scripts": {
+    "search:repos": "node scripts/github-repo-search.mjs",
+    "search:oss": "node scripts/oss-directory-search.mjs",
+    "search:hn": "node scripts/hn-search.mjs",
+    "search:sourcegraph": "node scripts/sourcegraph-search.mjs",
+    "rank": "node scripts/rank-candidates.mjs",
+    "report:html": "node scripts/render-html-report.mjs",
+    "demo:rank": "node scripts/rank-candidates.mjs --query \"free open source typeless alternative AI dictation voice input any app hold hotkey polished text\" --input examples/typeless-candidates.json",
+    "demo:html": "mkdir -p outputs && node scripts/render-html-report.mjs --input examples/typeless-report.json --out outputs/typeless-report.html",
+    "check": "node --check scripts/oss-directory-search.mjs && node scripts/github-repo-search.mjs \"open source typeless alternative AI dictation\" --limit 2 >/dev/null && node scripts/rank-candidates.mjs --query \"typeless alternative\" --input examples/typeless-candidates.json >/dev/null && node scripts/render-html-report.mjs --input examples/typeless-report.json --out /tmp/find-oss-alternative-report.html >/dev/null"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

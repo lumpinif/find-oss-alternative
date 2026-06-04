@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lumpinif/find-oss-alternative/templates/precedent-report.schema.json",
+  "title": "Find OSS Alternative Precedent Report",
+  "type": "object",
+  "required": ["intent", "queryFamilies", "candidates", "decision", "credits"],
+  "properties": {
+    "intent": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "productReference": {
+      "type": "object",
+      "required": ["name", "url"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        }
+      }
+    },
+    "queryFamilies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "url", "decision", "fit", "evidence"],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "sourceType": {
+            "type": "string",
+            "enum": ["skill", "repo", "product", "community", "code", "oss-directory"]
+          },
+          "decision": {
+            "type": "string",
+            "enum": ["Use", "Borrow", "Avoid", "Build New", "Reference"]
+          },
+          "fit": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "stars": {
+            "type": ["number", "null"]
+          },
+          "license": {
+            "type": ["string", "null"]
+          },
+          "platform": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "takeaways": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "risks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "verificationRequired": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "required": ["use", "borrow", "avoid", "buildNew"],
+      "properties": {
+        "use": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "borrow": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "avoid": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "buildNew": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "credits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "url", "license", "credit"],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "license": {
+            "type": ["string", "null"]
+          },
+          "credit": {
+            "type": "string"
+          },
+          "reuseGuidance": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "nextImplementationConstraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
