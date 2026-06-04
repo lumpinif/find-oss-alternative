@@ -1,6 +1,6 @@
 # Find OSS Alternative
 
-[![skills.sh](https://skills.sh/b/lumpinif/find-oss-alternative)](https://skills.sh/lumpinif/find-oss-alternative)
+[![skills.sh](https://skills.sh/b/lumpinif/find-oss-alternative)](https://skills.sh/lumpinif/find-oss-alternative/find-oss-alternative)
 
 Find the best open-source alternative before building from scratch.
 
