@@ -1,17 +1,46 @@
-# Find OSS Alternative
+<div align="center">
 
+# find-oss-alternative
+
+> *"Find the best open-source alternative before building from scratch."*
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Agent Skill](https://img.shields.io/badge/Agent-Skill-7c3aed)](https://github.com/lumpinif/find-oss-alternative)
 [![skills.sh](https://skills.sh/b/lumpinif/find-oss-alternative)](https://skills.sh/lumpinif/find-oss-alternative/find-oss-alternative)
 
-Find the best open-source alternative before building from scratch.
+<br>
 
-Find OSS Alternative is a skill for agentic coding. Before an agent designs or
-builds a product, feature, module, system, or another skill, it finds credible
-open-source alternatives, verifies the repos, studies what works, and turns
-that evidence into a practical implementation plan.
+**An Agent Skill for finding credible open-source alternatives before an agent builds from scratch** — it searches OSS directories, GitHub, community vocabulary, and code evidence, then turns the findings into a practical build decision.
 
-This is not about copying private code or ignoring licenses. It is about making
-agents learn from public builders instead of inventing worse versions of things
-that already exist.
+Most agents can code a replacement before they know whether a maintained OSS project already solves the problem. This skill forces the better path first: find candidates, verify repos, inspect licenses and maintenance, read real code, and return `Use / Borrow / Avoid / Build New`.
+
+<br>
+
+**Install** — pick one:
+
+</div>
+
+**A. With [`skills`](https://github.com/vercel-labs/skills) (any compatible agent):**
+
+```bash
+npx skills add lumpinif/find-oss-alternative -g
+```
+
+The `-g` flag installs globally (user-level) so every project picks it up.
+
+**B. Use without installing:**
+
+```bash
+npx skills use lumpinif/find-oss-alternative@find-oss-alternative
+```
+
+<div align="center">
+
+[Why you need it](#why-you-need-it) · [What it does](#what-it-does) · [Example](#example) · [Toolchain](#no-login-default-toolchain) · [Responsible use](#responsible-use)
+
+</div>
+
+---
 
 ## Why You Need It
 
@@ -23,18 +52,6 @@ that already exist.
 - **Fix**: make the agent find and verify those alternatives before it builds.
 - **Result**: better product instincts, cleaner architecture, proven patterns,
   clear things to avoid, and a higher chance of building something better.
-
-## Install
-
-```bash
-npx skills add lumpinif/find-oss-alternative
-```
-
-Use without installing:
-
-```bash
-npx skills use lumpinif/find-oss-alternative@find-oss-alternative
-```
 
 ## What It Does
 
